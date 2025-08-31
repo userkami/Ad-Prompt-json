@@ -290,3 +290,7 @@ script[type="application/ld+json"] {
   align-items: center;
   justify-content: center;
 }
+
+#main-title {
+	color: white;
+}
