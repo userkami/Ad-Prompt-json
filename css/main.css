@@ -1,0 +1,277 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.output-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.export-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.export-buttons button {
+  background-color: #9b59b6;
+  margin: 0;
+}
+
+.export-buttons button:hover {
+  background-color: #8e44ad;
+}
+
+#output {
+  background: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+  font-family: monospace;
+  margin-top: 1rem;
+  overflow-x: auto;
+  max-height: 400px;
+}
+
+.status {
+  margin-top: 1rem;
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+/* Preset Styles */
+.preset-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.preset-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.preset-item {
+  background: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.preset-item:hover {
+  background: #2980b9;
+}
+
+.preset-item.current {
+  background: #e74c3c;
+}
+
+/* Theme Gallery */
+.theme-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.theme-card {
+  border: 2px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-card:hover {
+  border-color: #3498db;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.theme-card.selected {
+  border-color: #e74c3c;
+  background: #fef5f4;
+}
+
+.theme-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.theme-preview {
+  height: 100px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+/* Article Styles */
+.article-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.article-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-question {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+  margin-left: 1rem;
+}
+
+/* Google Ad Styles */
+.ad-container {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border: 1px dashed #ccc;
+}
+
+.ad-placeholder {
+  color: #666;
+  font-style: italic;
+  padding: 2rem;
+}
+
+.ad-label {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+/* Schema Markup */
+script[type="application/ld+json"] {
+  display: none;
+}
+
+/* Toggle Preview Button */
+.preview-toggle {
+  background-color: #f39c12;
+  margin: 0;
+}
+
+.preview-toggle:hover {
+  background-color: #e67e22;
+}
+
+/* Collapsible JSON Viewer */
+.json-viewer {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: none;
+}
+
+.json-viewer.expanded {
+  display: block;
+}
+
+.toggle-btn {
+  background: #95a5a6;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.toggle-btn:hover {
+  background: #7f8c8d;
+}

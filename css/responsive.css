@@ -1,0 +1,30 @@
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .output-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .export-buttons {
+    margin-left: 0;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  .theme-gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  .preset-list {
+    flex-direction: column;
+  }
+  
+  .preset-item {
+    width: 100%;
+    text-align: center;
+  }
+}
