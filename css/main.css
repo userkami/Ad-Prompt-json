@@ -279,3 +279,14 @@ script[type="application/ld+json"] {
 .toggle-btn:hover {
   background: #7f8c8d;
 }
+
+/* Article Loading State */
+#article-container {
+  min-height: 200px;
+}
+
+#article-container.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

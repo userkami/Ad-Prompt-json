@@ -14,7 +14,7 @@
 </head>
 <body>
   <header>
-    <h1 id="main-title">AI Video Prompt Generator</h1>
+    <h1>🎬 AI Video Prompt Generator</h1>
     <p>Generate cinematic prompts for AI video tools like Veo 3, Runway, and Kaiber.</p>
   </header>
 
@@ -109,8 +109,8 @@
     <!-- Output Buttons in Same Row -->
     <div class="output-buttons">
       <button type="button" id="copyBtn" disabled>Copy to Clipboard</button>
-    <!--  <button type="button" id="previewToggle" class="preview-toggle">Toggle JSON Preview</button>
-      -->
+      <button type="button" id="previewToggle" class="preview-toggle">Toggle JSON Preview</button>
+      
       <div class="export-buttons">
         <button type="button" id="exportJsonBtn" disabled>Export as JSON</button>
         <button type="button" id="exportTextBtn" disabled>Export as Text</button>
@@ -137,90 +137,12 @@
       </div>
     </div>
 
-    <!-- Article Section for SEO -->
-    <article class="article-section">
-      <h1 class="article-title">Mastering AI Video Generation: The Ultimate Guide to Creating Cinematic Product Videos</h1>
-      
-      <h2>Introduction to AI Video Generation</h2>
-      <p>Artificial Intelligence has revolutionized the way we create video content. With tools like Veo 3, Runway, and Kaiber, anyone can now generate professional-quality videos using simple text prompts. However, the key to creating stunning AI-generated videos lies in crafting the perfect prompt.</p>
-      
-      <h2>Why Use Our AI Video Prompt Generator?</h2>
-      <p>Creating effective AI video prompts requires a deep understanding of cinematic language, visual storytelling, and the specific requirements of each AI platform. Our generator simplifies this process by automatically structuring your product information into optimized prompts that produce cinematic results.</p>
-      
-      <h3>Key Benefits:</h3>
-      <ul>
-        <li><strong>Time-Saving:</strong> Generate professional prompts in seconds</li>
-        <li><strong>Consistency:</strong> Follow proven cinematic structures</li>
-        <li><strong>Optimization:</strong> Tailored for top AI video platforms</li>
-        <li><strong>Customization:</strong> Multiple themes for different product types</li>
-      </ul>
-      
-      <h2>Understanding Cinematic Video Prompts</h2>
-      <p>A great AI video prompt combines technical specifications with creative storytelling elements. The most effective prompts include:</p>
-      
-      <h3>Essential Components:</h3>
-      <ol>
-        <li><strong>Description:</strong> Clear narrative structure</li>
-        <li><strong>Style:</strong> Visual aesthetics and mood</li>
-        <li><strong>Camera Movement:</strong> Dynamic shot composition</li>
-        <li><strong>Lighting:</strong> Atmospheric quality and focus</li>
-        <li><strong>Environment:</strong> Contextual setting</li>
-        <li><strong>Elements:</strong> Key visual components</li>
-      </ol>
-      
-      <h2>Maximizing Results with Different Themes</h2>
-      <p>Our generator offers four distinct themes, each optimized for different product types and marketing goals:</p>
-      
-      <h3>Serene Theme</h3>
-      <p>Perfect for wellness products, luxury items, and minimalist designs. Creates a peaceful, contemplative atmosphere that emphasizes product elegance.</p>
-      
-      <h3>Energetic Theme</h3>
-      <p>Ideal for tech gadgets, sports equipment, and high-performance products. Delivers dynamic, high-contrast visuals that convey power and excitement.</p>
-      
-      <h3>Mysterious Theme</h3>
-      <p>Great for luxury goods, exclusive products, and storytelling-driven reveals. Uses shadows and intrigue to create anticipation and desire.</p>
-      
-      <h3>Futuristic Theme</h3>
-      <p>Best for cutting-edge technology, sci-fi inspired products, and innovation showcases. Features sleek environments and advanced visual effects.</p>
-      
-      <!-- FAQ Section -->
-      <h2>Frequently Asked Questions</h2>
-      
-      <div class="faq-item">
-        <div class="faq-question">How do I use the generated JSON prompt?</div>
-        <div class="faq-answer">
-          <p>Simply copy the JSON output and paste it directly into your preferred AI video tool (Veo 3, Runway, or Kaiber). Most platforms accept JSON-formatted prompts for more precise control over video generation.</p>
-        </div>
+    <!-- Article Section - Loaded from external file -->
+    <div id="article-container">
+      <div style="text-align: center; padding: 2rem;">
+        <p>Loading article content...</p>
       </div>
-      
-      <div class="faq-item">
-        <div class="faq-question">Can I customize the camera movements and lighting?</div>
-        <div class="faq-answer">
-          <p>Yes! Use the "Advanced Styling" section to override default camera and lighting settings with your own specifications. This gives you complete creative control over the final video.</p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <div class="faq-question">What makes a good AI video prompt?</div>
-        <div class="faq-answer">
-          <p>Effective prompts combine clear visual descriptions with cinematic terminology. They specify key elements like camera angles, lighting conditions, and environmental context while maintaining a coherent narrative structure.</p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <div class="faq-question">Which AI video platforms work best with these prompts?</div>
-        <div class="faq-answer">
-          <p>These prompts are optimized for Veo 3, Runway ML, and Kaiber. Each platform has unique strengths, so we recommend testing your prompt across multiple tools to see which produces your preferred results.</p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <div class="faq-question">How can I improve my generated videos?</div>
-        <div class="faq-answer">
-          <p>Start with our generated prompt as a foundation, then iteratively refine it. Add specific details about your product, adjust timing elements, and experiment with different themes to find what works best for your brand.</p>
-        </div>
-      </div>
-    </article>
+    </div>
   </main>
 
   <!-- Bottom Ad Placeholder -->
@@ -256,404 +178,34 @@
   </script>
 
   <script>
-    // Theme Manager
-    class ThemeManager {
-      constructor() {
-        this.themes = {
-          serene: {
-            description: "Photorealistic cinematic sequence set in a pristine serene showroom...",
-            style: "photorealistic cinematic, premium minimalism",
-            lighting: "controlled, high-end ambient lighting with soft spot highlights; background glows in neutral tones (white/silver/graphite) to emphasize the product shine",
-            environment: "minimalist serene showroom with seamless white or metallic surfaces, ambient reflections, and subtle fog or mist to add dimensionality",
-            keywords: ["serene", "calm", "tranquil", "natural light", "peaceful", "premium design", "elegant motion", "photorealistic", "cinematic", "no text"]
-          },
-          energetic: {
-            description: "Photorealistic cinematic sequence set in a dynamic energetic space...",
-            style: "photorealistic cinematic, high-contrast dramatic",
-            lighting: "high-contrast lighting with vibrant colored gels and sharp beams; dramatic spotlights create intense focus",
-            environment: "dynamic abstract space with bold geometric shapes and reflective surfaces",
-            keywords: ["energetic", "dynamic", "vibrant", "high-contrast", "powerful", "premium design", "elegant motion", "photorealistic", "cinematic", "no text"]
-          },
-          mysterious: {
-            description: "Photorealistic cinematic sequence set in a shadowy mysterious environment...",
-            style: "photorealistic cinematic, dark moody atmosphere",
-            lighting: "low-key lighting with dramatic shadows and soft highlights; mysterious ambient glow",
-            environment: "shadowy atmospheric space with subtle movements and intrigue; foggy or dimly lit environment",
-            keywords: ["mysterious", "shadowy", "intrigue", "dark", "moody", "premium design", "elegant motion", "photorealistic", "cinematic", "no text"]
-          },
-          futuristic: {
-            description: "Photorealistic cinematic sequence set in a pristine futuristic showroom...",
-            style: "photorealistic cinematic, premium minimalism",
-            lighting: "controlled, high-end ambient lighting with soft spot highlights; background glows in neutral tones (white/silver/graphite) to emphasize the product shine",
-            environment: "minimalist futuristic showroom with seamless white or metallic surfaces, ambient reflections, and subtle fog or mist to add dimensionality",
-            keywords: ["futuristic", "cyberpunk", "neon", "tech", "advanced", "premium design", "elegant motion", "photorealistic", "cinematic", "no text"]
-          }
-        };
-        this.initializeThemeSelection();
-      }
-
-      getTheme(themeName) {
-        return this.themes[themeName] || this.themes.serene;
-      }
-
-      initializeThemeSelection() {
-        document.addEventListener('DOMContentLoaded', () => {
-          setTimeout(() => {
-            const themeCards = document.querySelectorAll('.theme-card');
-            const themeInput = document.getElementById('theme');
-            
-            if (themeCards.length > 0 && themeInput) {
-              themeCards.forEach(card => {
-                card.addEventListener('click', () => {
-                  // Remove selected class from all cards
-                  themeCards.forEach(c => c.classList.remove('selected'));
-                  // Add selected class to clicked card
-                  card.classList.add('selected');
-                  // Update hidden input
-                  themeInput.value = card.dataset.theme;
-                });
-              });
-              
-              // Set default selection
-              const defaultCard = document.querySelector('.theme-card[data-theme="serene"]');
-              if (defaultCard) {
-                defaultCard.classList.add('selected');
-              }
-            }
-          }, 100);
-        });
-      }
-    }
-
-    // Prompt Engine
-    class PromptEngine {
-      constructor(themeManager) {
-        this.themeManager = themeManager;
-      }
-
-      generatePrompt(formData) {
-        const {
-          brandName,
-          productName,
-          productElements,
-          primaryProduct,
-          secondaryElements,
-          supportingProps,
-          theme,
-          visualMetaphors,
-          cameraSettings,
-          lightingSettings
-        } = formData;
-
-        const selectedTheme = this.themeManager.getTheme(theme);
-
-        // Build elements array
-        const elements = [
-          `${brandName}-branded crate (matte finish, glowing seams)`,
-          primaryProduct || `${productName} main component`,
-          ...secondaryElements,
-          ...supportingProps,
-          "floating platform or display stand for the final product",
-          "soft ambient particles and shimmer trails around moving components"
-        ];
-
-        // Build product elements string
-        const productElementsString = productElements.length > 0 ? productElements.join(", ") : "sleek components with precision engineering";
-
-        // Build description with placeholders
-        const description = `Photorealistic cinematic sequence set in a pristine ${theme} showroom. A sealed ${brandName}-branded crate rests center stage, softly illuminated. The crate vibrates gently—then unlocks with a soft *click*. As it opens, a wave of elegant visual energy bursts outward. Inside, ${productName} components begin assembling mid-air with precision and elegance: ${productElementsString}. The entire scene feels like a ritual of innovation and refinement, showcasing the product's essence without using any text.`;
-
-        // Build motion description
-        const motion = `crate unlocks with satisfying click, panels fold away smoothly; internal elements lift into the air and assemble mid-air with slow, elegant movement; floating particles add a magical but clean touch`;
-
-        // Build ending description
-        const ending = `${productName} is fully assembled and centered on a glowing display base, softly rotating under a spotlight. Camera pulls back as ambient light dims, leaving only the product in focus.`;
-
-        return {
-          "description": description,
-          "style": selectedTheme.style,
-          "camera": cameraSettings || `starts with a slow push-in on the crate, then orbits as panels open; transitions into top-down reveal as products assemble mid-air`,
-          "lighting": lightingSettings || selectedTheme.lighting,
-          "environment": selectedTheme.environment,
-          "elements": elements,
-          "motion": motion,
-          "ending": ending,
-          "text": "none",
-          "keywords": [
-            brandName,
-            productName,
-            "crate-opening reveal",
-            "floating product parts",
-            "premium design",
-            "elegant motion",
-            ...selectedTheme.keywords.slice(5)
-          ]
-        };
-      }
-    }
-
-    // Export Handler
-    class ExportHandler {
-      static exportAsJson(data) {
-        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-        this.downloadBlob(blob, 'ai-video-prompt.json');
-      }
-
-      static exportAsText(data) {
-        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'text/plain' });
-        this.downloadBlob(blob, 'ai-video-prompt.txt');
-      }
-
-      static downloadBlob(blob, filename) {
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = filename;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-      }
-    }
-
-    // Preset Manager
-    class PresetManager {
-      static savePreset(name, formData) {
-        if (!name) return false;
-
-        let presets = JSON.parse(localStorage.getItem('aiPromptPresets') || '{}');
-        presets[name] = formData;
-        localStorage.setItem('aiPromptPresets', JSON.stringify(presets));
-        return true;
-      }
-
-      static loadPreset(name) {
-        const presets = JSON.parse(localStorage.getItem('aiPromptPresets') || '{}');
-        return presets[name] || null;
-      }
-
-      static getAllPresets() {
-        return JSON.parse(localStorage.getItem('aiPromptPresets') || '{}');
-      }
-
-      static loadPresetsIntoUI() {
-        const presetList = document.getElementById('presetList');
-        if (!presetList) return;
-        
-        const presets = this.getAllPresets();
-        
-        presetList.innerHTML = '';
-        
-        Object.keys(presets).forEach(name => {
-          const presetItem = document.createElement('div');
-          presetItem.className = 'preset-item';
-          presetItem.textContent = name;
-          presetItem.onclick = () => this.applyPreset(name);
-          presetList.appendChild(presetItem);
-        });
-      }
-
-      static applyPreset(name) {
-        const preset = this.loadPreset(name);
-        if (preset) {
-          document.getElementById('brandName').value = preset.brandName || '';
-          document.getElementById('productName').value = preset.productName || '';
-          document.getElementById('productElements').value = preset.productElements || '';
-          document.getElementById('primaryProduct').value = preset.primaryProduct || '';
-          document.getElementById('secondaryElements').value = preset.secondaryElements || '';
-          document.getElementById('supportingProps').value = preset.supportingProps || '';
-          document.getElementById('theme').value = preset.theme || 'serene';
-          document.getElementById('visualMetaphors').value = preset.visualMetaphors || '';
-          document.getElementById('cameraSettings').value = preset.cameraSettings || '';
-          document.getElementById('lightingSettings').value = preset.lightingSettings || '';
-          
-          // Update theme selection UI
-          document.querySelectorAll('.theme-card').forEach(card => {
-            card.classList.remove('selected');
-            if (card.dataset.theme === preset.theme) {
-              card.classList.add('selected');
-            }
-          });
-          
-          return true;
-        }
-        return false;
-      }
-    }
-
-    // UI Components
-    class UIComponents {
-      static showMessage(message, type = "success") {
-        const statusDiv = document.getElementById("statusMessage");
-        if (statusDiv) {
-          statusDiv.textContent = message;
-          statusDiv.className = type === "error" ? "error" : "status";
-        }
-      }
-
-      static updateJsonViewer(obj) {
-        const viewer = document.getElementById('jsonViewer');
-        if (viewer && viewer.classList.contains('expanded')) {
-          viewer.innerHTML = '<pre>' + JSON.stringify(obj, null, 2) + '</pre>';
-        }
-      }
-
-      static toggleJsonPreview() {
-        const viewer = document.getElementById('jsonViewer');
-        if (viewer) {
-          viewer.classList.toggle('expanded');
-          
-          if (viewer.classList.contains('expanded')) {
-            const outputText = document.getElementById('output')?.textContent;
-            if (outputText && outputText !== '// Your prompt will appear here...') {
-              try {
-                const jsonObj = JSON.parse(outputText);
-                viewer.innerHTML = '<pre>' + JSON.stringify(jsonObj, null, 2) + '</pre>';
-              } catch (e) {
-                viewer.innerHTML = '<p>Invalid JSON format</p>';
-              }
-            }
-          }
-        }
-      }
-
-      static copyToClipboard() {
-        const outputText = document.getElementById('output')?.textContent;
-        if (outputText) {
-          navigator.clipboard.writeText(outputText)
-            .then(() => {
-              this.showMessage("✅ Prompt copied to clipboard!");
-            })
-            .catch(err => {
-              console.error('Failed to copy: ', err);
-              this.showMessage("❌ Error copying text. Please manually select and copy.", "error");
-            });
-        }
-      }
-    }
-
-    // Main Application
-    class App {
-      constructor() {
-        this.themeManager = new ThemeManager();
-        this.promptEngine = new PromptEngine(this.themeManager);
-        this.currentPrompt = null;
-        
-        // Wait for DOM to be loaded before initializing
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', () => this.initialize());
-        } else {
-          this.initialize();
-        }
-      }
-
-      initialize() {
-        this.initializeEventListeners();
-      }
-
-      initializeEventListeners() {
-        // Ensure DOM is fully ready
-        setTimeout(() => {
-          const generateBtn = document.getElementById("generateBtn");
-          const copyBtn = document.getElementById("copyBtn");
-          const exportJsonBtn = document.getElementById("exportJsonBtn");
-          const exportTextBtn = document.getElementById("exportTextBtn");
-          const previewToggle = document.getElementById("previewToggle");
-          const savePresetBtn = document.getElementById("savePresetBtn");
-          
-          if (generateBtn) generateBtn.addEventListener("click", () => this.generatePrompt());
-          if (copyBtn) copyBtn.addEventListener("click", () => UIComponents.copyToClipboard());
-          if (exportJsonBtn) exportJsonBtn.addEventListener("click", () => this.exportAsJson());
-          if (exportTextBtn) exportTextBtn.addEventListener("click", () => this.exportAsText());
-          if (previewToggle) previewToggle.addEventListener("click", () => UIComponents.toggleJsonPreview());
-          if (savePresetBtn) savePresetBtn.addEventListener("click", () => this.savePreset());
-          
-          // Load saved presets
-          PresetManager.loadPresetsIntoUI();
-        }, 200);
-      }
-
-      collectFormData() {
-        return {
-          brandName: document.getElementById('brandName')?.value.trim() || '',
-          productName: document.getElementById('productName')?.value.trim() || '',
-          productElements: document.getElementById('productElements')?.value.split(',').map(s => s.trim()).filter(Boolean) || [],
-          primaryProduct: document.getElementById('primaryProduct')?.value.trim() || '',
-          secondaryElements: document.getElementById('secondaryElements')?.value.split(',').map(s => s.trim()).filter(Boolean) || [],
-          supportingProps: document.getElementById('supportingProps')?.value.split(',').map(s => s.trim()).filter(Boolean) || [],
-          theme: document.getElementById('theme')?.value || 'serene',
-          visualMetaphors: document.getElementById('visualMetaphors')?.value.split(',').map(s => s.trim()).filter(Boolean) || [],
-          cameraSettings: document.getElementById('cameraSettings')?.value.trim() || '',
-          lightingSettings: document.getElementById('lightingSettings')?.value.trim() || ''
-        };
-      }
-
-      generatePrompt() {
-        const formData = this.collectFormData();
-        
-        if (!formData.brandName || !formData.productName) {
-          UIComponents.showMessage("⚠️ Please fill in Brand Name and Product Name.", "error");
-          return;
-        }
-
-        this.currentPrompt = this.promptEngine.generatePrompt(formData);
-        
-        const outputElement = document.getElementById('output');
-        if (outputElement) {
-          outputElement.textContent = JSON.stringify(this.currentPrompt, null, 2);
-        }
-
-        // Update JSON viewer
-        UIComponents.updateJsonViewer(this.currentPrompt);
-
-        const copyBtn = document.getElementById('copyBtn');
-        const exportJsonBtn = document.getElementById('exportJsonBtn');
-        const exportTextBtn = document.getElementById('exportTextBtn');
-        
-        if (copyBtn) copyBtn.disabled = false;
-        if (exportJsonBtn) exportJsonBtn.disabled = false;
-        if (exportTextBtn) exportTextBtn.disabled = false;
-        
-        UIComponents.showMessage("✅ Prompt generated successfully!", "success");
-      }
-
-      exportAsJson() {
-        if (this.currentPrompt) {
-          ExportHandler.exportAsJson(this.currentPrompt);
-          UIComponents.showMessage("✅ JSON file exported successfully!");
-        }
-      }
-
-      exportAsText() {
-        if (this.currentPrompt) {
-          ExportHandler.exportAsText(this.currentPrompt);
-          UIComponents.showMessage("✅ Text file exported successfully!");
-        }
-      }
-
-      savePreset() {
-        const presetNameInput = document.getElementById('presetName');
-        if (!presetNameInput) return;
-        
-        const presetName = presetNameInput.value.trim();
-        if (!presetName) {
-          UIComponents.showMessage("⚠️ Please enter a preset name", "error");
-          return;
-        }
-
-        const formData = this.collectFormData();
-        if (PresetManager.savePreset(presetName, formData)) {
-          PresetManager.loadPresetsIntoUI();
-          presetNameInput.value = '';
-          UIComponents.showMessage("✅ Preset saved successfully!");
-        } else {
-          UIComponents.showMessage("❌ Error saving preset", "error");
-        }
-      }
-    }
-
-    // Initialize the application
-    window.app = new App();
+    // All your existing JavaScript code here (ThemeManager, PromptEngine, etc.)
+    // ... (same as before)
+    
+    // Add this function to load article content
+  
+  function loadArticleContent() {
+    const container = document.getElementById('article-container');
+    container.classList.add('loading');
+    
+    fetch('article.html')
+      .then(response => response.text())
+      .then(html => {
+        container.classList.remove('loading');
+        container.innerHTML = html;
+      })
+      .catch(error => {
+        console.error('Error loading article:', error);
+        container.classList.remove('loading');
+        container.innerHTML = 
+          '<p style="text-align: center; color: #666; padding: 2rem;">Article content could not be loaded.</p>';
+      });
+  }
+    
+    // Call this after DOM is loaded
+     document.addEventListener('DOMContentLoaded', function() {
+    loadArticleContent();
+    // ... rest of your initialization code
+  });
   </script>
 </body>
 </html>
