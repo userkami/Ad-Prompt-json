@@ -292,5 +292,5 @@ script[type="application/ld+json"] {
 }
 
 #main-title {
-	color: white;
+	color: white !important;
 }
